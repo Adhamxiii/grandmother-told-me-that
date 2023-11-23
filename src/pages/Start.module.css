@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: url("../assets//bg.jpg") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.startContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  max-height: 300px;
+}
+
+.start {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startMag {
+  width: 20%;
+  height: 20%;
+}
+
+.startBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(#af6e35, #dbaf68);
+  color: #fff;
+  box-shadow: 0 0 10px #fff;
+  width: 9%;
+  height: 45%;
+  text-transform: uppercase;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.startBtn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .startMag {
+    width: 30%;
+    height: 30%;
+  }
+
+  .startBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 14%;
+    height: 45%;
+    left: 53%;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo {
+    max-height: 250px;
+  }
+  .startMag {
+    width: 70%;
+    height: 70%;
+  }
+  .startBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 31%;
+    height: 45%;
+    left: 57%;
+  }
+}
